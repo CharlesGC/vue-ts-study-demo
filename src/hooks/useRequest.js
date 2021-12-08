@@ -1,14 +1,6 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: Charles Guo
- * @Date: 2021-12-07 17:24:55
- * @LastEditors: Charles Guo
- * @LastEditTime: 2021-12-07 18:18:00
- */
 import { reactive, toRefs, isRef } from "@vue/reactivity";
 
-export default () => {
+export const useRequest = () => {
   const state = reactive({
     hits: [],
     error: false,

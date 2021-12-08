@@ -1,14 +1,6 @@
 <script setup lang="ts">
 import { reactive, onMounted, ref } from 'vue';
-import useRequest from '../hooks/useRequest.js';
-
-interface Item {
-	objectID: string;
-	url: string;
-	title: string;
-}
-
-type Hits = Array<Item>;
+import { useRequest } from '../hooks/useRequest.js';
 
 let state = reactive({
 	input: ref('vue'),

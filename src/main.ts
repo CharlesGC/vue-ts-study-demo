@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import lazyPlugins from './plugins/lazyload/index'
+
+createApp(App).use(lazyPlugins, {
+
+}).mount('#app')
